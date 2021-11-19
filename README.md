@@ -5,14 +5,34 @@
 * [] Data Models
     * [x] Category
         * [x] id
-        * [x] Integer
-        * [x] Doesn't allow null values
-        * [x] Set as primary key
-        * [x] Uses auto increment
+            * [x] Integer
+            * [x] Doesn't allow null values
+            * [x] Set as primary key
+            * [x] Uses auto increment
         * [x] category_name
-        * [x] String
-        * [x] Doesn't allow null values
-    * [] Product
+            * [x] String
+            * [x] Doesn't allow null values
+    * [x] Product
+        * [x] id:
+            * [x] Integer
+            * [x] Doesn't allow null values
+            * [x] Set as primary key
+            * [x] Uses auto increment
+        * [x] product_name:
+            * [x] String
+            * [x] Doesn't allow null values
+        * [x] price:
+            * [x] Decimal
+            * [x] Doesn't allow null values
+            * [x]Validates that the value is a decimal
+        * [x] stock:
+            * [x] Integer
+            * [x] Doesn't allow null values
+            * [x] Set a default value of 10
+            * [x] Validates that the value is numeric
+        * [x] category_id:
+            * [x] Integer
+            * [x] References the category model's id
     * [] Tag
     * [] ProdcutTag
 
