@@ -33,7 +33,14 @@
         * [x] category_id:
             * [x] Integer
             * [x] References the category model's id
-    * [] Tag
+    * [x] Tag
+        * [x] id
+            * [x] Integer
+            * [x] Doesn't allow null values
+            * [x] Set as primary key
+            * [x] Uses auto increment
+        * [x] tag_name
+            * [x] String
     * [] ProdcutTag
 
 * [] Routes
