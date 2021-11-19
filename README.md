@@ -3,7 +3,15 @@
 ### TODO
 
 * [] Data Models
-    * [] Category
+    * [x] Category
+        * [x] id
+        * [x] Integer
+        * [x] Doesn't allow null values
+        * [x] Set as primary key
+        * [x] Uses auto increment
+        * [x] category_name
+        * [x] String
+        * [x] Doesn't allow null values
     * [] Product
     * [] Tag
     * [] ProdcutTag
@@ -78,6 +86,8 @@ Starter code was provided for this application.
 [Dotenv](https://www.npmjs.com/package/dotenv)
 
 [Express](https://www.npmjs.com/package/express)
+
+[Insomnia Core](https://insomnia.rest/)
 
 [MySQL](https://www.npmjs.com/package/mysql2)
 
