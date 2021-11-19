@@ -24,7 +24,7 @@
         * [x] price
             * [x] Decimal
             * [x] Doesn't allow null values
-            * [x]Validates that the value is a decimal
+            * [x] Validates that the value is a decimal
         * [x] stock
             * [x] Integer
             * [x] Doesn't allow null values
