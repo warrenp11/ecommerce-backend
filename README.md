@@ -13,24 +13,24 @@
             * [x] String
             * [x] Doesn't allow null values
     * [x] Product
-        * [x] id:
+        * [x] id
             * [x] Integer
             * [x] Doesn't allow null values
             * [x] Set as primary key
             * [x] Uses auto increment
-        * [x] product_name:
+        * [x] product_name
             * [x] String
             * [x] Doesn't allow null values
-        * [x] price:
+        * [x] price
             * [x] Decimal
             * [x] Doesn't allow null values
             * [x]Validates that the value is a decimal
-        * [x] stock:
+        * [x] stock
             * [x] Integer
             * [x] Doesn't allow null values
             * [x] Set a default value of 10
             * [x] Validates that the value is numeric
-        * [x] category_id:
+        * [x] category_id
             * [x] Integer
             * [x] References the category model's id
     * [x] Tag
@@ -41,6 +41,23 @@
             * [x] Uses auto increment
         * [x] tag_name
             * [x] String
+    * [x] ProdcutTag
+        * [x] id
+            * [x] Integer
+            * [x] Doesn't allow null values
+            * [x] Set as primary key
+            * [x] Uses auto increment
+        * [x] product_id
+            * [x] Integer
+            * [x] References the product model's id
+        * [x] tag_id
+            * [x] Integer
+            * [x] References the tag model's id
+
+* [] Associations
+    * [] Category
+    * [] Product
+    * [] Tag
     * [] ProdcutTag
 
 * [] Routes
@@ -49,11 +66,7 @@
     * [] Tag
     * [] ProdcutTag
 
-* [] Associations
-    * [] Category
-    * [] Product
-    * [] Tag
-    * [] ProdcutTag
+
 
 
 
