@@ -2,7 +2,7 @@
 
 ### TODO
 
-* [] Data Models
+* [x] Data Models
     * [x] Category
         * [x] id
             * [x] Integer
@@ -54,11 +54,18 @@
             * [x] Integer
             * [x] References the tag model's id
 
-* [] Associations
-    * [] Category
-    * [] Product
-    * [] Tag
-    * [] ProdcutTag
+<!--
+// Product belongs to Category, as a category can have multiple products but a product can only belong to one category.
+// Category has many Product models.
+// Product belongs to many Tag models. Using the ProductTag through model, allow products to have multiple tags and tags to have many products.
+// Tag belongs to many Product models.
+-->
+
+* [x] Associations
+    * [x] Product belongsTo Category
+    * [x] Categories have many Products
+    * [x] Products belongToMany Tags (through ProductTag)
+    * [x] Tags belongToMany Products (through ProductTag)
 
 * [] Routes
     * [] Category
