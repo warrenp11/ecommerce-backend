@@ -68,8 +68,8 @@
     * [x] Tags belongToMany Products (through ProductTag)
 
 * [] Routes
-    * [] Category
-    * [] Product
+    * [x] Category
+    * [x] Product
     * [] Tag
     * [] ProdcutTag
 
