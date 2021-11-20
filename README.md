@@ -61,7 +61,7 @@ When you're ready to run the application, from the root directory of the applica
 
            node server.js
 
-[Click Here](https://watch.screencastify.com/) to see a video demonstration of the application in use
+[Click Here](https://watch.screencastify.com/v/7Yo5OrpUyvEe7jViHizN) to see a video demonstration of the application in use
 
 ## Credits
 [Dotenv](https://www.npmjs.com/package/dotenv)
