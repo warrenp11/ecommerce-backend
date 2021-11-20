@@ -1,96 +1,5 @@
 # 13. Object-Relational Mapping (ORM) Challenge: E-commerce Back End
 
-### TODO
-
-* [x] Data Models
-    * [x] Category
-        * [x] id
-            * [x] Integer
-            * [x] Doesn't allow null values
-            * [x] Set as primary key
-            * [x] Uses auto increment
-        * [x] category_name
-            * [x] String
-            * [x] Doesn't allow null values
-    * [x] Product
-        * [x] id
-            * [x] Integer
-            * [x] Doesn't allow null values
-            * [x] Set as primary key
-            * [x] Uses auto increment
-        * [x] product_name
-            * [x] String
-            * [x] Doesn't allow null values
-        * [x] price
-            * [x] Decimal
-            * [x] Doesn't allow null values
-            * [x] Validates that the value is a decimal
-        * [x] stock
-            * [x] Integer
-            * [x] Doesn't allow null values
-            * [x] Set a default value of 10
-            * [x] Validates that the value is numeric
-        * [x] category_id
-            * [x] Integer
-            * [x] References the category model's id
-    * [x] Tag
-        * [x] id
-            * [x] Integer
-            * [x] Doesn't allow null values
-            * [x] Set as primary key
-            * [x] Uses auto increment
-        * [x] tag_name
-            * [x] String
-    * [x] ProdcutTag
-        * [x] id
-            * [x] Integer
-            * [x] Doesn't allow null values
-            * [x] Set as primary key
-            * [x] Uses auto increment
-        * [x] product_id
-            * [x] Integer
-            * [x] References the product model's id
-        * [x] tag_id
-            * [x] Integer
-            * [x] References the tag model's id
-
-<!--
-// Product belongs to Category, as a category can have multiple products but a product can only belong to one category.
-// Category has many Product models.
-// Product belongs to many Tag models. Using the ProductTag through model, allow products to have multiple tags and tags to have many products.
-// Tag belongs to many Product models.
--->
-
-* [x] Associations
-    * [x] Product belongsTo Category
-    * [x] Categories have many Products
-    * [x] Products belongToMany Tags (through ProductTag)
-    * [x] Tags belongToMany Products (through ProductTag)
-
-* [] Routes
-    * [x] Category
-    * [x] Product
-    * [] Tag
-    * [] ProdcutTag
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![Code badge](https://img.shields.io/github/languages/top/warrenp11/ecommerce-backend) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -98,7 +7,6 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Tests](#tests)
 * [Credits](#credits)
 * [Project Insight](#project-insight)
 * [Questions](#questions)
@@ -129,6 +37,32 @@ Starter code was provided for this application.
         WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
         THEN I am able to successfully create, update, and delete data in my database
 
+## Installation
+1. Copy one of the clone links from the GitHub [repository](https://www.github.com/warrenp11/ecommerce-backend)
+    * HTTPS `https://github.com/warrenp11/ecommerce-backend.git`
+    * SSH  `git@github.com:warrenp11/ecommerce-backend.git`
+
+2. In a new Bash or Terminal Window, navigate to the directory where the repository will be added
+
+3. Clone the repository with the following command:
+
+           git clone <insert clone link here>
+
+4. Open repository in preferred code editor
+
+5. In the terminal, navigate to the root folder, and install the dependencies with the command:
+
+           npm install
+
+## Usage
+When you're ready to run the application, from the root directory of the application enter the following commands into your command line:
+
+           node seeds/index.js
+
+           node server.js
+
+[Click Here](https://watch.screencastify.com/) to see a video demonstration of the application in use
+
 ## Credits
 [Dotenv](https://www.npmjs.com/package/dotenv)
 
@@ -140,6 +74,12 @@ Starter code was provided for this application.
 
 [Sequelize](https://www.npmjs.com/package/sequelize)
 
+## Project Insights
+Thruthfully, imposter syndrome has been slowly creeping its way into my mind. I don't mean to come off as being too negative but it's the honest truth. There are days, some worse than others, where I wonder if I can ever be career ready and if I've chosen the right career change.
+
+As we progress further into the course work and closer to graduation the more I need to remind myself how far I've come. 
+
+This assignment came pretty natural to me compared to a few of the previous projects and weekly modules for class. I ran into a small bug when programming the tag-routes.js file that initially worried me, however, after a few minutes of debugging I was able to fix it.
 
 ## Questions
 If you have any questions about this project contact me directly at warrenp11@gmail.com. 
@@ -147,7 +87,6 @@ If you have any questions about this project contact me directly at warrenp11@gm
 Visit this project's repository at https://www.github.com/warrenp11/ecommerce-backend
 
 View more of my projects at https://www.github.com/warrenp11
-
 
 ## License
 Licensed under the [MIT](./LICENSE.txt/) license.
